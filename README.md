@@ -55,7 +55,7 @@ end.
 
 ## 3
 
-https://github.com/Deniska10K/PascalIsShit/blob/main/code/AveragePositiveValues.pas
+https://github.com/Deniska10K/PascalIsShit/blob/3127f00abdc76d32655b16df1b68592ba89c1784/code/AveragePositiveValues.pas#L1-L40
 
 ## 4
 
