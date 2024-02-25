@@ -3,6 +3,7 @@ program CalculateFunctionZ;
 var
   a: real;
   b: real;
+  Z: real;
   sumSquares: real;
 
 begin
