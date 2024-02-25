@@ -1,6 +1,10 @@
 program SumOfNumbers;
+
 var
-  sum, i, N: Integer;
+  sum: integer;
+  i: integer;
+  N: Integer;
+
 begin
   sum := 0; // Инициализация суммы
   writeln('Введите число N: ');
