@@ -195,8 +195,8 @@ program CalculateFunctionZ;
 var
   a: real;
   b: real;
-  sumSquares: real;
   Z: real;
+  sumSquares: real;
 
 begin
   writeln('Введите значение для переменной a:');
