@@ -180,6 +180,7 @@ end.
 *Блок схема:*
 ![Блок схема](./flowcharts/flowchart_2_1.png)
 *[Сайт](https://programforyou.ru/block-diagram-redactor) где можно открыть блок-схемы*
+
 *Блоксхемы находятся в директории <ins>**./flowcharts***</ins>
 
 # Задание 3
@@ -225,4 +226,5 @@ end.
 *Блок схема:*
 ![Блок схема](./flowcharts/flowchart_3_2.png)
 *[Сайт](https://programforyou.ru/block-diagram-redactor) где можно открыть блок-схемы*
+
 *Блоксхемы находятся в директории <ins>**./flowcharts***</ins>
