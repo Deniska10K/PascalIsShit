@@ -196,6 +196,7 @@ var
   a: real;
   b: real;
   sumSquares: real;
+  Z: real;
 
 begin
   writeln('Введите значение для переменной a:');
