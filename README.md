@@ -197,20 +197,20 @@ end.
 program CalculateFunctionZ;
 
 var
-  a: real;
-  b: real;
+  a, b: real;
   Z: real;
-  sumSquares: real;
+  squareSum: real;
 
 begin
   writeln('Введите значение для переменной a:');
   readln(a);
+  
   writeln('Введите значение для переменной b:');
   readln(b);
   
-  sumSquares := a * a + b * b;
+  squareSum := sqr(a) + sqr(b);
   
-  Z := Power(sumSquares, 1/4) + sin(sumSquares) - 1 / sumSquares;
+  Z := sqrt(sqrt(squareSum)) + sin(squareSum) - 1 / squareSum;
   
   writeln('Значение функции Z(a, b): ', Z:0:3);
 end.
