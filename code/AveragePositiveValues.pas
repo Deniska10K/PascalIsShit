@@ -1,40 +1,39 @@
-program AveragePositiveValues;
+program CalculateAveragePositiveFunctionValues;
 
 const
-  MinX: integer = -2;
-  MaxX: integer = 2;
-  Stepize: real = 0.2;
+  START_X = -2;
+  END_X = 2;
+  STEP = 0.2;
 
 var
-  x: real;
-  sum: real; 
-  average: real;
-  positiveCount: integer;
+  currentX, functionSum, functionAverage: real;
+  numPositiveValues: integer;
 
-function Func(x: Real): Real;
+function CalculateFunction(x: real): real;
 begin
-  Func := Power(x, 3) + Power(cos(x), 4);
+  CalculateFunction := Power(x, 3) + Power(cos(x), 4);
 end;
 
 begin
-  sum := 0;
-  positiveCount := 0;
-  x := MinX;
-  while x <= MaxX do
+  functionSum := 0;
+  numPositiveValues := 0;
+  
+  currentX := START_X;
+  while currentX <= END_X do
   begin
-    if Func(x) > 0 then
+    if CalculateFunction(currentX) > 0 then
     begin
-      sum := sum + Func(x);
-      positiveCount := positiveCount + 1;
+      functionSum := functionSum + CalculateFunction(currentX);
+      Inc(numPositiveValues);
     end;
-    x := x + Stepize;
+    currentX := currentX + STEP;
   end;
-
-  if positiveCount > 0 then
+  
+  if numPositiveValues > 0 then
   begin
-    average := sum / positiveCount;
-    writeln('Среднее арифметическое положительных значений функции: ', average:0:3);
+    functionAverage := functionSum / numPositiveValues;
+    writeln('Среднее значение: ', functionAverage:0:3);
   end
   else
-    writeln('Положительных значений функции на заданном интервале не обнаружено.');
+    writeln('Нет положительных значений на этом интервале.');
 end.
