@@ -1,9 +1,9 @@
 program AveragePositiveValues;
 
 const
-    MinX: integer = -2;
-    MaxX: integer = 2;
-    Stepize: real = 0.2;
+  MinX: integer = -2;
+  MaxX: integer = 2;
+  Stepize: real = 0.2;
 
 var
   x: real;
